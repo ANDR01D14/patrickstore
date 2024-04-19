@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0 , 0 , 0 , 0.2),transparent), url(image/main.jpg);
+    background-size: cover;
+    background-position: center ;
+    padding: 0 9%;
+    position: relative;
+    
+}
+
+form{
+ background: #fff;
+ width: 250px;
+ text-align: center;
+ height: 30px;
+ display: flex;
+
+}
+form input{
+    flex: 1;
+    font-size: 12px;
+    border: none;
+    outline: none;
+
+}
+form button{
+    background: red;
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    color:#fff;
+    letter-spacing: 1px ;
+    cursor: pointer;
+
+}
+
+
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+.cart-icon{
+    width: 50px;
+    cursor: pointer;
+
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding: 30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);  
+   background-color: #fff;
+   transition: width 0.3s;
+}
+nav ul li a:hover::after{
+    width: 50px;
+}
+.title{
+    position: absolute;
+    top: 65%;
+    left: 51%;
+    transform: translate(-32%,-70%);
+    font-size: 60px;
+    -webkit-text-stroke: 2px #fff;
+    color: rgba(35, 32, 32, 0.487);
+    background-image: linear-gradient(#E70B1F,rgb(138, 25, 25));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -440px 0;
+    animation: backcolor 3s linear infinite alternate;
+
+}
+@keyframes backcolor{
+    100%{
+        background-position: 0 0;
+    }
+}
+.discription{
+    position: absolute;
+    top: 75%;
+    left: 55%;
+    transform: translate(-40%,-70%);
+    font-size : 12px;
+    background-color: #2424248d;
+}
+
+.buy{
+    position: absolute;
+    top: 85%;
+    left: 57%;
+    transform: translate(-40%,-70%);
+    width: 100px;
+    height: 50px;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    border-radius: 1.5px;
+    transition: ease-out 0.3;
+    outline: none;
+    border: 3px solid #fff;
+background-color: transparent;
+    z-index: 1;
+}
+.price{
+    position: absolute;
+    top: 81.5%;
+    left: 45%;
+    font-size: 25px;
+    color: #fefefe;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+.buy:hover{
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+    background-color: #0000;
+
+}
+
+.tag{
+    position: absolute;
+    top: 33%;
+    right: 70%; 
+    transform: translate(-10,-70%);
+    background-color: transparent;
+    font-size: 40px;
+    -webkit-text-stroke: 2px rgb(111, 111, 111);
+    color: rgba(249, 249, 249, 0.487);
+       
+
+}
+
+.tag2{
+    position: absolute;
+    top: 38%;
+    right: 83%;
+    transform: translate(-10,-70%);
+    background-color: transparent;
+    font-size: 40px;
+    -webkit-text-stroke: 2px rgb(111, 111, 111);
+     color: rgba(249, 249, 249, 0.487);
+
+}
+.tag3{
+    position: absolute;
+    top: 43%;
+    right: 72.8%;
+    transform: translate(-10,-70%);
+    background-color: transparent;
+    font-size: 40px;
+    -webkit-text-stroke: 2px rgb(111, 111, 111);
+     color: rgba(249, 249, 249, 0.487);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
